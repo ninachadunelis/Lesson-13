@@ -121,11 +121,19 @@
 // console.log(name_surname);
 
 //function 4
-function Max(arr) {
-    return Math.max.apply(null, arr);
+function Max(array5) {
+    let maxValue=0
+
+    for (let item of array5){
+        if (item>maxValue){
+            maxValue=item;
+        }
+    }
+    return maxValue;
+    
   }
   
-  var max_arr = [45, 67, -92, 100];
+  var max_arr = [44, 45, 67, -92, 100,410,304,555];
   
   console.log(Max(max_arr))
    
